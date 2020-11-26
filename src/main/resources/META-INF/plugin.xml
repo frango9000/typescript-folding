@@ -2,7 +2,7 @@
     <id>com.github.fsancheztemprano.typescriptfolding</id>
     <name>typescript-folding</name>
     <vendor email="frango9000@gmail.com" url="https://github.com/fsancheztemprano/typescript-folding">Francisco Sanchez</vendor>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 
     <description><![CDATA[
       Forked from https://github.com/rath/angular-folding by Jang-Ho Hwang

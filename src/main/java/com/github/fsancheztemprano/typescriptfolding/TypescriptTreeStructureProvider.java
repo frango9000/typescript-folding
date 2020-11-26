@@ -14,13 +14,13 @@ import java.util.regex.Pattern;
 
 public class TypescriptTreeStructureProvider implements TreeStructureProvider {
     private final Pattern namePattern =
-            Pattern.compile("(.*)\\.(component|service|pipe|guard|directive)\\.(css|sass|scss|stylus|styl|less|html|haml|pug|ts|spec\\.ts|.*\\.ts)", Pattern.CASE_INSENSITIVE);
+            Pattern.compile("(.*)\\.(component|service|pipe|guard|directive)\\.(css|sass|scss|stylus|styl|less|html|haml|pug|ts|([a-zA-Z0-9]+)\\.ts)", Pattern.CASE_INSENSITIVE);
 
     @NotNull
     @Override
     public Collection<AbstractTreeNode<?>> modify(@NotNull AbstractTreeNode<?> parent,
-                                               @NotNull Collection<AbstractTreeNode<?>> children,
-                                               ViewSettings viewSettings) {
+                                                  @NotNull Collection<AbstractTreeNode<?>> children,
+                                                  ViewSettings viewSettings) {
         if (!(parent.getValue() instanceof PsiDirectory))
             return children;
 
