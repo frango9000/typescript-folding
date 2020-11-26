@@ -1,19 +1,24 @@
 <idea-plugin>
     <id>com.github.fsancheztemprano.typescriptfolding</id>
     <name>typescript-folding</name>
-    <vendor>fsancheztemprano</vendor>
+    <vendor email="frango9000@gmail.com" url="https://github.com/fsancheztemprano/typescript-folding">Francisco Sanchez</vendor>
+    <version>0.0.1</version>
+
+    <description><![CDATA[
+      Forked from https://github.com/rath/angular-folding by Jang-Ho Hwang
+      This plugin groups files which have same name and different extensions.<br>
+      For instance, app.component.ts, app.component.css, app.component.html, app.component.*.ts will be grouped a virtual folder named app.component.
+    ]]></description>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.fsancheztemprano.typescriptfolding.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.fsancheztemprano.typescriptfolding.services.MyProjectService"/>
-    </extensions>
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="145.0"/>
 
-    <applicationListeners>
-        <listener class="com.github.fsancheztemprano.typescriptfolding.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    <depends>com.intellij.modules.lang</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <treeStructureProvider implementation="com.github.fsancheztemprano.typescriptfolding.TypescriptTreeStructureProvider"/>
+    </extensions>
 </idea-plugin>
