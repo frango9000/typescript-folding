@@ -3,6 +3,18 @@
 # typescript-folding Changelog
 
 ## [Unreleased]
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+## [0.0.4]
 ### Fixed 
 
  regex
