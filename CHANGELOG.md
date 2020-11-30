@@ -4,16 +4,12 @@
 
 ## [Unreleased]
 ### Added
-
-### Changed
-
-### Deprecated
-
-### Removed
+Folding of Redux elements
+Plugin icon and description
 
 ### Fixed
+Only fold typescript files
 
-### Security
 ## [0.0.4]
 ### Fixed 
 

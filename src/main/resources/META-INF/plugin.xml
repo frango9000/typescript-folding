@@ -2,12 +2,12 @@
     <id>com.github.fsancheztemprano.typescriptfolding</id>
     <name>typescript-folding</name>
     <vendor email="frango9000@gmail.com" url="https://github.com/fsancheztemprano/typescript-folding">Francisco Sanchez</vendor>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
 
     <description><![CDATA[
-      Forked from https://github.com/rath/angular-folding by Jang-Ho Hwang
       This plugin groups files which have same name and different extensions.<br>
-      For instance, app.component.ts, app.component.css, app.component.html, app.component.*.ts will be grouped a virtual folder named app.component.
+      For instance, app.component.ts, app.component.css, app.component.html, app.component.*.ts will be grouped a virtual folder named app.component.<br>
+      Forked from https://github.com/rath/angular-folding by Jang-Ho Hwang
     ]]></description>
 
     <!-- Product and plugin compatibility requirements -->
