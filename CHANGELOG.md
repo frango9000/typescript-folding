@@ -3,16 +3,8 @@
 # typescript-folding Changelog
 
 ## [Unreleased]
-### Added
-
-### Changed
-
-### Deprecated
-
-### Removed
-
 ### Fixed
-
+revert only *.ts files
 ### Security
 ## [0.0.5]
 ### Added

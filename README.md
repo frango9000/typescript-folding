@@ -17,10 +17,14 @@
 Typescript Component Folding:
 
 This plugin groups files which have same name and different extensions.<br>
-      
+
+File name groupings: component|service|pipe|guard|directive|actions|effects|reducer|selectors|state|resolver <br>
+
+Extensions folded: css|sass|scss|stylus|styl|less|html|haml|pug|ts|js|json|spec\\.ts|.*\\.ts <br>
+
 For instance, app.component.ts, app.component.css, app.component.html, app.component.*.ts will be grouped a virtual folder named app.component.<br>
       
-Forked from https://github.com/rath/angular-folding by Jang-Ho Hwang
+Forked from Original idea plugin: https://github.com/rath/angular-folding by Jang-Ho Hwang
 <!-- Plugin description end -->
 
 ## Installation

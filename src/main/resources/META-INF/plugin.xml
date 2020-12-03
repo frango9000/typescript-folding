@@ -2,7 +2,7 @@
     <id>com.github.fsancheztemprano.typescriptfolding</id>
     <name>typescript-folding</name>
     <vendor email="frango9000@gmail.com" url="https://github.com/fsancheztemprano/typescript-folding">Francisco Sanchez</vendor>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
 
     <description><![CDATA[
       This plugin groups files which have same name and different extensions.<br>
