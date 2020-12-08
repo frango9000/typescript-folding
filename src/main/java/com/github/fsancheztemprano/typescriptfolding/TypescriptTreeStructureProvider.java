@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 
 public class TypescriptTreeStructureProvider implements TreeStructureProvider {
     private final Pattern namePattern =
-            Pattern.compile("(.*)\\.(component|service|pipe|guard|directive|actions|effects|reducer|selectors|state|resolver)\\.(css|sass|scss|stylus|styl|less|html|haml|pug|ts|js|json|spec\\.ts|.*\\.ts)", Pattern.CASE_INSENSITIVE);
+            Pattern.compile("(.*)\\.(component|service|pipe|guard|directive|interceptor|module|actions|effects|reducer|selectors|state|resolver)((\\.|\\..*\\.)(css|sass|scss|stylus|styl|less|html|haml|pug|ts|js|json))", Pattern.CASE_INSENSITIVE);
     @NotNull
     @Override
     public Collection<AbstractTreeNode<?>> modify(@NotNull AbstractTreeNode<?> parent,
@@ -41,7 +41,7 @@ public class TypescriptTreeStructureProvider implements TreeStructureProvider {
 
             String prefix = m.group(1);
             String classType = m.group(2);
-            String extension = m.group(3);
+            String extension = m.group(3).substring(1);
             final String groupKey = String.format("%s.%s", prefix, classType);
 
             ComponentFileGroup group = map.get(groupKey);
