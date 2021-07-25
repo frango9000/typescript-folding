@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 
 public class TypescriptTreeStructureProvider implements TreeStructureProvider {
     private final Pattern namePattern =
-            Pattern.compile("(.*)\\.(component|service|pipe|guard|directive|interceptor|module|actions|effects|reducer|selectors|state|resolver)((\\.|\\..*\\.)(css|sass|scss|stylus|styl|less|html|haml|pug|ts|js|json))", Pattern.CASE_INSENSITIVE);
+            Pattern.compile("(.*)\\.(component|service|pipe|guard|directive|interceptor|module|actions|effects|reducer|selectors|state|resolver|datasource)((\\.|\\..*\\.)(css|sass|scss|stylus|styl|less|html|haml|pug|ts|js|json))", Pattern.CASE_INSENSITIVE);
     @NotNull
     @Override
     public Collection<AbstractTreeNode<?>> modify(@NotNull AbstractTreeNode<?> parent,
