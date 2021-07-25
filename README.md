@@ -18,7 +18,7 @@ Typescript Component Folding:
 
 This plugin groups files which have same name and different extensions.<br>
 
-File name groupings: component|service|pipe|guard|directive|actions|effects|reducer|selectors|state|resolver <br>
+File name groupings: component|service|pipe|guard|directive|actions|effects|reducer|selectors|state|resolver|datasource|model <br>
 
 Extensions folded: css|sass|scss|stylus|styl|less|html|haml|pug|ts|js|json|spec\\.ts|.*\\.ts <br>
 
