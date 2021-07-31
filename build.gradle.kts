@@ -46,8 +46,8 @@ intellij {
 // Configure gradle-changelog-plugin plugin.
 // Read more: https://github.com/JetBrains/gradle-changelog-plugin
 changelog {
-    version.set(properties("pluginVersion"))
-    groups.set(emptyList())
+    version = properties("pluginVersion")
+    groups = emptyList()
 }
 
 // Configure detekt plugin.
@@ -64,23 +64,17 @@ detekt {
 }
 
 tasks {
-    // Set the JVM compatibility versions
-    properties("javaVersion").let {
-        withType<JavaCompile> {
-            sourceCompatibility = it
-            targetCompatibility = it
-        }
-        withType<KotlinCompile> {
-            kotlinOptions.jvmTarget = it
-        }
-        withType<Detekt> {
-            jvmTarget = it
-        }
+    // Set the compatibility versions to 1.8
+    withType<JavaCompile> {
+        sourceCompatibility = "1.8"
+        targetCompatibility = "1.8"
+    }
+    withType<KotlinCompile> {
+        kotlinOptions.jvmTarget = "1.8"
     }
 
-
-    wrapper {
-        gradleVersion = properties("gradleVersion")
+    withType<Detekt> {
+        jvmTarget = "1.8"
     }
 
     patchPluginXml {
