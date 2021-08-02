@@ -2,7 +2,7 @@
     <id>com.github.fsancheztemprano.typescriptfolding</id>
     <name>typescript-folding</name>
     <vendor email="frango9000@gmail.com" url="https://github.com/fsancheztemprano/typescript-folding">Francisco Sanchez</vendor>
-    <version>0.0.9</version>
+    <version>0.0.10</version>
 
     <description><![CDATA[
         Typescript Component Folding:
@@ -14,7 +14,7 @@
     ]]></description>
 
     <change-notes>
-        Added module and interceptor file patterns
+       Remove model pattern
     </change-notes>
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
